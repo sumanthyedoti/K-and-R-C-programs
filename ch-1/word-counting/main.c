@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-short is_space(int c) {
-  return c == ' ' || c == '\n' || c == '\t';
+_Bool is_space(int c) {
+  return c == ' ' || c == '\n' || c == '\t' || c == EOF;
 }
 
 int main()
