@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * count the number of occurrences of each digit, alphabets, of white space,
+ * characters (blank, tab, newline), and of all other characters
+ */
+
 int main()
 {
   int
