@@ -1,9 +1,13 @@
-#include <stdio.h>
-
 /**
  * write a program that reads a set of text lines and prints the longest
+ *    while (there's another line)
+ *      if (it's longer than the previous longest)
+ *        (save it)
+ *        (save its length)
+ *    print longest line
  */
 
+#include <stdio.h>
 
 #define MAX_LENGTH 400
 
