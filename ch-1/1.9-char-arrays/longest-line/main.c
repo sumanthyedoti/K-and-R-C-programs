@@ -2,12 +2,6 @@
 
 /**
  * write a program that reads a set of text lines and prints the longest
- *
- *  while (there's another line)
- *    if (it's longer than the previous longest)
- *      (save it)
- *      (save its length)
- *  print longest line
  */
 
 
@@ -36,7 +30,7 @@ int getNextLine(char line[], int maxlength) {
   int c, i;
   for(i = 0; i < maxlength - 1 && (c = getchar()) != EOF && c != '\n'; ++i)
     line[i] = c;
-  if(line[i] == '\n') {
+  if(c == '\n') {
     line[i] = c;
     ++i;
   }

@@ -15,11 +15,11 @@ int main()
   int len, lineNo = 1;
   char line[MAX_LINE_LENGTH];
 
-  while((len = getNextLine(line, MAX_LINE_LENGTH)) > 0) {
+  while((len = getNextLine(line, MAX_LINE_LENGTH)) != EOF) {
     if(lineNo == 1)
       printf("\nLines more than %d characters length:\n", COMPARE_LENGHT);
     if(len > COMPARE_LENGHT) {
-      printf("==> %d %s", len, line);
+      printf("==> %s", line);
     }
     ++lineNo;
   }
