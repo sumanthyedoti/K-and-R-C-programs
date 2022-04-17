@@ -13,7 +13,7 @@ int main()
 
 int power(int base, int n) {
   int p = 1;
-  for(int i = 1; i <= n; ++i)
+  for(;n >= 0; --n)
     p = p * base;
   return p;
 }
